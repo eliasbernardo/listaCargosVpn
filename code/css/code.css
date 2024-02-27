@@ -158,6 +158,14 @@ h1,.formulario{
     display: flex;
     flex-direction: column;
 }
+.inventario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+}
+.btn-inventario{
+    width: 30%!important;
+}
 .formulario-register, .buttons{
     width: 50%;
 }
@@ -169,6 +177,10 @@ h1,.formulario{
     padding: 10px;
     margin-bottom: 8px;
     align-items: center;
+}
+.caja-text h5{
+    position: relative;
+    left: 100%;
 }
 .caja-text input,.caja-select select{
     width: 100%;
@@ -205,4 +217,56 @@ h1,.formulario{
 }
 .buttons button:hover{
     background-color: rgba(255, 255, 255, .5);
+}
+/*IMPRESION CARGO*/
+.busqueda{
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    display: flex;
+    margin-bottom: 50px;
+}
+.busqueda .caja-text{
+    margin: 0;
+    margin-right: 10px;
+}
+.busqueda button{
+    padding: 7px;
+}
+table{
+    color: #fff;
+    width: 100%;
+    border-spacing: 0;
+}
+tr th{
+    text-transform: uppercase;
+}
+tr th, tr td{
+    font-size: 13px;
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+    padding: 5px;
+    vertical-align: bottom;
+    border: 1px solid rgb(255 255 255 / 35%);
+}
+.entrega,.devolucion{
+    display: flex;
+    font-size: 12px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+.entrega .fa-solid, .devolucion .fa-regular{
+    margin-right: 10px;
+}
+.entrega{
+    margin-bottom: 10px;
+}
+@media print{
+    button{
+        display: none;
+    }
 }

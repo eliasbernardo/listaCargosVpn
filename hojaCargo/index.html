@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/css/code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <script src="../code/js/icons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="conten-register busqueda">
+        <div class="search">
+            <div class="caja-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="number" placeholder="Buscar por DNI">
+            </div>
+            <div class="buttons">
+                <button>BUSCAR</button>
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>N° Cargo</th>
+                        <th>DNI</th>
+                        <th>Nombres</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Serie Gea</th>
+                        <th>Memoria RAM</th>
+                        <th>Procesador</th>
+                        <th>CARGOS</th>
+                    </tr>
+                </thead>
+                <tbody id="searchUser">
+                    <tr>
+                        <td>967</td>
+                        <td>75171157</td>
+                        <td>Randall Elías</td>
+                        <td>Bernardo</td>
+                        <td>Cotrina</td>
+                        <td>MXL123456</td>
+                        <td>8GB</td>
+                        <td>core i5-6</td>
+                        <td>
+                            <div class="entrega" onclick="abrirVentana()">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <h5>C. entrega</h5>
+                            </div>
+                            <div class="devolucion">
+                                <i class="fa-regular fa-file-pdf"></i>
+                                <h5>C. devolución</h5>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function abrirVentana() {
+          // Abre una nueva ventana con la URL especificada
+          window.open("../imprimirCargo/", "MiVentana", "width=600,height=400");
+          localStorage.setItem("titulo","elias");
+        }
+        </script>
+</body>
+</html>
