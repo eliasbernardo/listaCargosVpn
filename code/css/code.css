@@ -265,6 +265,68 @@ tr th, tr td{
 .entrega{
     margin-bottom: 10px;
 }
+
+/*HOJA CARGO*/
+.paperPrint{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.img-title-numCargo-fecha{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+.paperPrint img{
+    width: 200px;
+}
+#numCargoFecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 160px;
+}
+.paperPrint h3{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    width: calc(100% - 360px);
+}
+.contenedor-papel{
+    min-width: 793px;
+    width: 793px;
+    height: 1123px;
+    margin: 0;
+    background: #fff;
+    padding: 0 40px;
+}
+.paperPrint p{
+    font-size: 14px;
+}
+.paperPrint h4{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.paperPrint .identificacion{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.paperPrint h2#dni{
+    font-size: 12px;
+}
+.paperPrint h2#direccion{
+    font-size: 14px;
+}
 @media print{
     button{
         display: none;

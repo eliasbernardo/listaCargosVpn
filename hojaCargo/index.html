@@ -59,12 +59,30 @@
             </table>
         </div>
     </div>
-    <script>
-        function abrirVentana() {
-          // Abre una nueva ventana con la URL especificada
-          window.open("../imprimirCargo/", "MiVentana", "width=600,height=400");
-          localStorage.setItem("titulo","elias");
-        }
-        </script>
+    <div id="paperPrint" class="paperPrint">
+        <div class="contenedor-papel">
+            <div class="img-title-numCargo-fecha">
+                <img src="../img/logo-set.png" alt="">
+                <h3>CARGO DE ENTREGA DE EQUIPOS INFORMATICOS</h3>
+                <div id="numCargoFecha">
+                    <h5>N° DE CARGO: SET-0975</h5>
+                    <h5>Ate, 29 de febrero de 2024</h5>
+                </div>
+            </div>
+            <p>
+                "La empresa SERVICIOS ESPECIALIZADOS DE TELEMARKETING S.A.C con RUC 20537176670, asigna y entrega equipos informáticos en calidad de préstamo  al Sr(a):
+                "
+            </p>
+            <h4>RANDALL ELIAS BERNARDO COTRINA</h4>
+            <div class="identificacion">
+                <p>Identificado con DNI número:</p>
+                <h2 id="dni">75171157</h2>
+                <p>y domiciliado en:</p>
+                <h2 id="direccion">Maria Parado de Bellido 1188, Santa Anita 15008</h2>
+            </div>
+            <h2>COMPUTADORA</h2>
+            <button onclick="window.print()">IMPRIMIR</button>
+        </div>
+    </div>
 </body>
 </html>
